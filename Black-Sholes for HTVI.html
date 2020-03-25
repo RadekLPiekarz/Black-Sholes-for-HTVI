@@ -13155,7 +13155,7 @@ $$d_2 = d_1 - \sigma \sqrt{T - t} = \frac{\ln \left(\frac{S}{K} \right) + \left(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13169,7 +13169,7 @@ $$d_2 = d_1 - \sigma \sqrt{T - t} = \frac{\ln \left(\frac{S}{K} \right) + \left(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">sigma</span><span class="p">):</span>
@@ -13186,7 +13186,7 @@ $$d_2 = d_1 - \sigma \sqrt{T - t} = \frac{\ln \left(\frac{S}{K} \right) + \left(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">put</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">sigma</span><span class="p">):</span>
@@ -13203,7 +13203,7 @@ $$d_2 = d_1 - \sigma \sqrt{T - t} = \frac{\ln \left(\frac{S}{K} \right) + \left(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">call</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
@@ -13219,7 +13219,7 @@ $$d_2 = d_1 - \sigma \sqrt{T - t} = \frac{\ln \left(\frac{S}{K} \right) + \left(
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13228,6 +13228,40 @@ $$d_2 = d_1 - \sigma \sqrt{T - t} = \frac{\ln \left(\frac{S}{K} \right) + \left(
 <pre>140.6629277737204</pre>
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Results of Llinares example:</span>
+<span class="n">call</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The call option value in Llinares example amounts to: &quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">call</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The call option value in Llinares example amounts to:  13.211383899566577
+</pre>
+</div>
 </div>
 
 </div>
@@ -13253,6 +13287,7 @@ $$d_2 = d_1 - \sigma \sqrt{T - t} = \frac{\ln \left(\frac{S}{K} \right) + \left(
 <p>A. Sure.</p>
 <h2 id="References">References<a class="anchor-link" href="#References">&#182;</a></h2><p>Emmanuel Llinares, <em>Intangible Assets Valuation and High Uncertainty</em> <a href="https://www.nera.com/publications/archive/2011/intangible-assets-valuation-and-high-uncertainty.html">link</a></p>
 <p>Pierino Ursone, <em>How to Calculate Options Prices and Their Greeks: Exploring the Black Scholes Model from Delta to Vega</em> John Wiley &amp; Sons.</p>
+<p>David G. Luenberger, <em>Investment Science</em>, Oxford University Press</p>
 
 </div>
 </div>
